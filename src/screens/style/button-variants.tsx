@@ -1,8 +1,11 @@
 import React from 'react';
+import { NativeModules } from 'react-native';
 
 import { Button, buttonVariants, View } from '@/ui';
 
 import { Title } from './title';
+
+const { CalendarModule } = NativeModules;
 
 type variant = keyof typeof buttonVariants;
 
@@ -19,6 +22,12 @@ export const ButtonVariants = () => {
                 key={`button-${index}`}
                 label={`${variant.toUpperCase()} BUTTON`}
                 variant={variant}
+                onPress={() => {
+                  CalendarModule.createCalendarEvent(
+                    'testName',
+                    'testLocation'
+                  );
+                }}
               />
             );
           })}
