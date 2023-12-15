@@ -31,9 +31,9 @@ require('dotenv').config({
  * for example: if the APP_ENV is staging, the bundle id will be com.obytes.staging
  */
 
-const BUNDLE_ID = 'com.obytes'; // ios bundle id
-const PACKAGE = 'com.obytes'; // android package name
-const NAME = 'ObytesApp'; // app name
+const BUNDLE_ID = 'com.itc.obytes'; // ios bundle id
+const PACKAGE = 'com.itc.obytes'; // android package name
+const NAME = 'ITC Obytes'; // app name
 const EXPO_ACCOUNT_OWNER = 'obytes'; // expo account owner
 const EAS_PROJECT_ID = 'c3e1075b-6fe7-4686-aa49-35b46a229044'; // eas project id
 
